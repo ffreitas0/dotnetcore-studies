@@ -1,0 +1,98 @@
+X-Sender: errors@SampleApp.test
+X-Receiver: errors@SampleApp.test
+MIME-Version: 1.0
+From: errors@SampleApp.test
+To: errors@SampleApp.test
+Date: 24 Sep 2018 16:05:10 -0300
+Subject: [Development][Error] ArgumentNullException
+Content-Type: text/html; charset=us-ascii
+Content-Transfer-Encoding: quoted-printable
+
+<table>=0A<tr><td>Path</td><td>/account/login/twitter</td></tr>=0A=
+<tr><td>Descriptive.Message</td><td>An internal error has occurre=
+d</td></tr>=0A<tr><td>Time</td><td>9/24/2018 7:05 PM</td></tr>=0A=
+<tr><td>User Details</td><td>Anonymous User</td></tr></table>=0A=0A=
+<h1>Exception</h1>=0A<table>=0A<tr><td>Type</td><td>ArgumentNullE=
+xception</td></tr>=0A<tr><td>Message</td><td>Value cannot be null=
+..=0D=0AParameter name: value</td></tr>=0A<tr><td>Source</td><td>S=
+ystem.Text.Encodings.Web</td></tr>=0A<tr><td>Stack</td><td><pre> =
+  at System.Text.Encodings.Web.TextEncoder.Encode(String value)=0D=0A=
+   at Microsoft.AspNetCore.Authentication.Twitter.TwitterHandler.=
+<ObtainRequestTokenAsync>d__14.MoveNext()=0D=0A--- End of stack t=
+race from previous location where exception was thrown ---=0D=0A =
+  at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw=
+()=0D=0A   at System.Runtime.CompilerServices.TaskAwaiter.HandleN=
+onSuccessAndDebuggerNotification(Task task)=0D=0A   at System.Run=
+time.CompilerServices.TaskAwaiter`1.GetResult()=0D=0A   at Micros=
+oft.AspNetCore.Authentication.Twitter.TwitterHandler.<HandleChall=
+engeAsync>d__13.MoveNext()=0D=0A--- End of stack trace from previ=
+ous location where exception was thrown ---=0D=0A   at System.Run=
+time.ExceptionServices.ExceptionDispatchInfo.Throw()=0D=0A   at S=
+ystem.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDeb=
+uggerNotification(Task task)=0D=0A   at Microsoft.AspNetCore.Auth=
+entication.AuthenticationHandler`1.<ChallengeAsync>d__53.MoveNext=
+()=0D=0A--- End of stack trace from previous location where excep=
+tion was thrown ---=0D=0A   at System.Runtime.ExceptionServices.E=
+xceptionDispatchInfo.Throw()=0D=0A   at System.Runtime.CompilerSe=
+rvices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task t=
+ask)=0D=0A   at Microsoft.AspNetCore.Authentication.Authenticatio=
+nService.<ChallengeAsync>d__11.MoveNext()=0D=0A--- End of stack t=
+race from previous location where exception was thrown ---=0D=0A =
+  at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw=
+()=0D=0A   at System.Runtime.CompilerServices.TaskAwaiter.HandleN=
+onSuccessAndDebuggerNotification(Task task)=0D=0A   at Microsoft.=
+AspNetCore.Mvc.ChallengeResult.<ExecuteResultAsync>d__14.MoveNext=
+()=0D=0A--- End of stack trace from previous location where excep=
+tion was thrown ---=0D=0A   at System.Runtime.ExceptionServices.E=
+xceptionDispatchInfo.Throw()=0D=0A   at System.Runtime.CompilerSe=
+rvices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task t=
+ask)=0D=0A   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker=
+..<InvokeResultAsync>d__19.MoveNext()=0D=0A--- End of stack trace =
+from previous location where exception was thrown ---=0D=0A   at =
+System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()=0D=0A=
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSucces=
+sAndDebuggerNotification(Task task)=0D=0A   at Microsoft.AspNetCo=
+re.Mvc.Internal.ResourceInvoker.<InvokeNextResultFilterAsync>d__2=
+4.MoveNext()=0D=0A--- End of stack trace from previous location w=
+here exception was thrown ---=0D=0A   at System.Runtime.Exception=
+Services.ExceptionDispatchInfo.Throw()=0D=0A   at Microsoft.AspNe=
+tCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext =
+context)=0D=0A   at Microsoft.AspNetCore.Mvc.Internal.ResourceInv=
+oker.Next(State& next, Scope& scope, Object& state, Boolean& isCo=
+mpleted)=0D=0A   at Microsoft.AspNetCore.Mvc.Internal.ResourceInv=
+oker.<InvokeNextResourceFilter>d__22.MoveNext()=0D=0A--- End of s=
+tack trace from previous location where exception was thrown ---=0D=0A=
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Thro=
+w()=0D=0A   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.=
+Rethrow(ResourceExecutedContext context)=0D=0A   at Microsoft.Asp=
+NetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& sco=
+pe, Object& state, Boolean& isCompleted)=0D=0A   at Microsoft.Asp=
+NetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d=
+__17.MoveNext()=0D=0A--- End of stack trace from previous locatio=
+n where exception was thrown ---=0D=0A   at System.Runtime.Except=
+ionServices.ExceptionDispatchInfo.Throw()=0D=0A   at System.Runti=
+me.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotifi=
+cation(Task task)=0D=0A   at Microsoft.AspNetCore.Mvc.Internal.Re=
+sourceInvoker.<InvokeAsync>d__15.MoveNext()=0D=0A--- End of stack=
+ trace from previous location where exception was thrown ---=0D=0A=
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Thro=
+w()=0D=0A   at System.Runtime.CompilerServices.TaskAwaiter.Handle=
+NonSuccessAndDebuggerNotification(Task task)=0D=0A   at Microsoft=
+..AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()=0D=0A=
+--- End of stack trace from previous location where exception was=
+ thrown ---=0D=0A   at System.Runtime.ExceptionServices.Exception=
+DispatchInfo.Throw()=0D=0A   at System.Runtime.CompilerServices.T=
+askAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)=0D=0A=
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddlewar=
+e.<Invoke>d__6.MoveNext()=0D=0A--- End of stack trace from previo=
+us location where exception was thrown ---=0D=0A   at System.Runt=
+ime.ExceptionServices.ExceptionDispatchInfo.Throw()=0D=0A   at Sy=
+stem.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebu=
+ggerNotification(Task task)=0D=0A   at Microsoft.AspNetCore.Diagn=
+ostics.StatusCodePagesMiddleware.<Invoke>d__3.MoveNext()=0D=0A---=
+ End of stack trace from previous location where exception was th=
+rown ---=0D=0A   at System.Runtime.ExceptionServices.ExceptionDis=
+patchInfo.Throw()=0D=0A   at System.Runtime.CompilerServices.Task=
+Awaiter.HandleNonSuccessAndDebuggerNotification(Task task)=0D=0A =
+  at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.=
+<Invoke>d__6.MoveNext()</pre></td></tr>=0A</table>=0A

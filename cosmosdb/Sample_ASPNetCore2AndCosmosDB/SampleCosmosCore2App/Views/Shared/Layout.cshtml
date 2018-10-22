@@ -1,0 +1,19 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Sample App</title>
+    <link rel="stylesheet" href="/styles/main.css" />
+    <script src="/scripts/src/lib/jquery.min.js"></script>
+    <script src="/scripts/src/lib/vue.js"></script>
+    <script src="/scripts/app-bundle.js"></script>
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-left">(Sample Logo)</div>
+        @await Component.InvokeAsync("LoginStatus")
+    </div>
+    @RenderBody()
+</body>
+</html>

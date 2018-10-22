@@ -1,0 +1,134 @@
+﻿body {
+    padding-bottom: 20px;
+    background-color: whitesmoke;
+}
+
+/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Set widths on the form inputs since otherwise they're 100% wide */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+/* Carousel */
+.carousel-caption p {
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+/* Make .svg files in the carousel display properly in older browsers */
+.carousel-inner .item img[src$=".svg"] {
+    width: 100%;
+}
+
+.picture-item {
+    position: relative;
+}
+
+    .picture-item hr {
+        margin: 5px 0;
+    }
+
+.inputfile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+
+.inputfile + label {
+    max-width: 80%;
+    font-size: 1.25rem;
+    /* 20px */
+    font-weight: 700;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    padding: 0.625rem 1.25rem;
+    /* 10px 20px */
+}
+
+.no-js .inputfile + label {
+    display: none;
+}
+
+.inputfile:focus + label,
+.inputfile.has-focus + label {
+    outline: 1px dotted #000;
+    outline: -webkit-focus-ring-color auto 5px;
+}
+
+.inputfile + label * {
+    /* pointer-events: none; */
+    /* in case of FastClick lib use */
+}
+
+.inputfile + label svg {
+    width: 1em;
+    height: 1em;
+    vertical-align: middle;
+    fill: currentColor;
+    margin-top: -0.25em;
+    /* 4px */
+    margin-right: 0.25em;
+    /* 4px */
+}
+
+
+/* style 1 */
+
+.inputfile-1 + label {
+    color: #f1e5e6;
+    background-color: #d3394c;
+}
+
+    .inputfile-1:focus + label,
+    .inputfile-1.has-focus + label,
+    .inputfile-1 + label:hover {
+        background-color: #722040;
+    }
+
+
+/* Hide/rearrange for smaller screens */
+@media screen and (max-width: 767px) {
+    /* Hide captions */
+    .carousel-caption {
+        display: none;
+    }
+}
+
+
+@media (min-width: 768px) {
+    .picture-item .thumbnail > img, .thumbnail a > img {
+        height: 118px;
+    }
+}
+
+@media (min-width: 992px) {
+    .picture-item .thumbnail > img, .thumbnail a > img {
+        height: 150px;
+    }
+
+    .picture-item:hover .caption {
+        display: block !important;
+    }
+
+    .picture-item .thumbnail .caption {
+        position: absolute;
+        top: 80px;
+        color: white;
+        display: none;
+    }
+}

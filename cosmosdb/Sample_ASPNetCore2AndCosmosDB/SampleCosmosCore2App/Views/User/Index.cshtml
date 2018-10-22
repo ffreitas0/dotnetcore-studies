@@ -1,0 +1,52 @@
+﻿@model SampleCosmosCore2App.Models.User.UserIndexModel
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/Layout.cshtml";
+}
+
+<h2>Your Account</h2>
+<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+Username: @Model.User.Username<br />
+Registered: @Model.User.CreationTime<br />
+<br />
+Twitter Status: @if (Model.UserAuthentications.ContainsKey("Twitter"))
+{
+    var twitter = Model.UserAuthentications["Twitter"].Single();
+    <text>@twitter.Name at @twitter.CreationTime</text>
+}
+else
+{
+    <text>Not Linked</text>
+}
+<br />
+<h3>API Keys</h3>
+<table>
+    <tr>
+        <th>Created</th>
+        <th>Name</th>
+        <th>API Key Id</th>
+        <th>API Key Secret</th>
+        <th></th>
+    </tr>
+    @if (Model.UserAuthentications.ContainsKey("APIKey"))
+    {
+        var keys = Model.UserAuthentications["APIKey"];
+        foreach (var key in keys)
+        {
+            <tr>
+                <td>@key.CreationTime</td>
+                <td>@key.Name</td>
+                <td>@key.Id</td>
+                <td>@key.GetMaskedIdentity()</td>
+                <td><a asp-action="Revoke" asp-route-id="@key.Id">Revoke</a></td>
+            </tr>
+        }
+    }
+    <tr>
+        <td colspan="5">
+            <a asp-action="AddKey">Add a key</a>
+        </td>
+    </tr>
+</table>

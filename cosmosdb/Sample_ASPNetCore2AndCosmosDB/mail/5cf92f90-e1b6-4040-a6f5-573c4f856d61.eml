@@ -1,0 +1,195 @@
+X-Sender: errors@SampleApp.test
+X-Receiver: errors@SampleApp.test
+MIME-Version: 1.0
+From: errors@SampleApp.test
+To: errors@SampleApp.test
+Date: 24 Sep 2018 16:03:58 -0300
+Subject: [Development][Error] DocumentClientException
+Content-Type: text/html; charset=us-ascii
+Content-Transfer-Encoding: quoted-printable
+
+<table>=0A<tr><td>Path</td><td>/favicon.ico</td></tr>=0A<tr><td>D=
+escriptive.Message</td><td>An internal error has occurred</td></t=
+r>=0A<tr><td>Time</td><td>9/24/2018 7:03 PM</td></tr>=0A<tr><td>L=
+ogin Type</td><td>Session (Interactive)</td></tr>=0A<tr><td>User.=
+Id</td><td>15db180c-75b2-45f4-91af-3fda2084d1b7</td></tr>=0A<tr><=
+td>User.Username</td><td>ffreitas0</td></tr>=0A<tr><td>User.Email=
+</td><td>ffreitas0@gmail.com</td></tr>=0A<tr><td>Session.Id</td><=
+td>1b3d2fba-669f-4248-8f63-1e527041f9d9</td></tr>=0A<tr><td>Sessi=
+on.CreationTime</td><td>9/24/2018 7:00:24 PM</td></tr></table>=0A=
+=0A<h1>Exception</h1>=0A<table>=0A<tr><td>Type</td><td>DocumentCl=
+ientException</td></tr>=0A<tr><td>Message</td><td>Message: {"Erro=
+rs":["Resource Not Found"]}=0D=0AActivityId: ccbd3188-7839-4ab6-a=
+7ad-269a8e399587, Request URI: /apps/DocDbApp/services/DocDbServe=
+r14/partitions/a4cb495a-38c8-11e6-8106-8cdcd42c33be/replicas/1p/,=
+ RequestStats: =0D=0AResponseTime: 2018-09-24T19:03:58.1739188Z, =
+StoreReadResult: StorePhysicalAddress: rntbd://10.55.224.49:10253=
+/apps/DocDbApp/services/DocDbServer14/partitions/a4cb495a-38c8-11=
+e6-8106-8cdcd42c33be/replicas/1p/, LSN: 8, GlobalCommittedLsn: -1=
+, PartitionKeyRangeId: 0, IsValid: True, StatusCode: 0, IsGone: F=
+alse, IsNotFound: True, IsInvalidPartition: False, RequestCharge:=
+ 1, ItemLSN: -1, ResourceType: Document, OperationType: Read=0D=0A=
+, SDK: Microsoft.Azure.Documents.Common/1.22.0.0, Windows/10.0.17=
+134 documentdb-netcore-sdk/1.9.1</td></tr>=0A<tr><td>Source</td><=
+td>Microsoft.Azure.DocumentDB.Core</td></tr>=0A<tr><td>Stack</td>=
+<td><pre>   at Microsoft.Azure.Documents.Client.ClientExtensions.=
+<ParseResponseAsync>d__1.MoveNext()=0D=0A--- End of stack trace f=
+rom previous location where exception was thrown ---=0D=0A   at S=
+ystem.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()=0D=0A=
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSucces=
+sAndDebuggerNotification(Task task)=0D=0A   at System.Runtime.Com=
+pilerServices.TaskAwaiter`1.GetResult()=0D=0A   at Microsoft.Azur=
+e.Documents.GatewayStoreModel.<>c__DisplayClass20_0.<<InvokeAsync=
+>b__0>d.MoveNext()=0D=0A--- End of stack trace from previous loca=
+tion where exception was thrown ---=0D=0A   at System.Runtime.Exc=
+eptionServices.ExceptionDispatchInfo.Throw()=0D=0A   at System.Ru=
+ntime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNot=
+ification(Task task)=0D=0A   at System.Runtime.CompilerServices.T=
+askAwaiter`1.GetResult()=0D=0A   at Microsoft.Azure.Documents.Bac=
+koffRetryUtility`1.<>c__DisplayClass1_0.<<ExecuteAsync>b__0>d.Mov=
+eNext()=0D=0A--- End of stack trace from previous location where =
+exception was thrown ---=0D=0A   at System.Runtime.ExceptionServi=
+ces.ExceptionDispatchInfo.Throw()=0D=0A   at System.Runtime.Compi=
+lerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(T=
+ask task)=0D=0A   at System.Runtime.CompilerServices.TaskAwaiter`=
+1.GetResult()=0D=0A   at Microsoft.Azure.Documents.BackoffRetryUt=
+ility`1.<ExecuteRetry>d__3.MoveNext()=0D=0A--- End of stack trace=
+ from previous location where exception was thrown ---=0D=0A   at=
+ System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()=0D=0A=
+   at Microsoft.Azure.Documents.BackoffRetryUtility`1.<ExecuteRet=
+ry>d__3.MoveNext()=0D=0A--- End of stack trace from previous loca=
+tion where exception was thrown ---=0D=0A   at System.Runtime.Exc=
+eptionServices.ExceptionDispatchInfo.Throw()=0D=0A   at System.Ru=
+ntime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNot=
+ification(Task task)=0D=0A   at System.Runtime.CompilerServices.T=
+askAwaiter`1.GetResult()=0D=0A   at Microsoft.Azure.Documents.Bac=
+koffRetryUtility`1.<ExecuteAsync>d__1.MoveNext()=0D=0A--- End of =
+stack trace from previous location where exception was thrown ---=
+=0D=0A   at System.Runtime.ExceptionServices.ExceptionDispatchInf=
+o.Throw()=0D=0A   at System.Runtime.CompilerServices.TaskAwaiter.=
+HandleNonSuccessAndDebuggerNotification(Task task)=0D=0A   at Sys=
+tem.Runtime.CompilerServices.TaskAwaiter`1.GetResult()=0D=0A   at=
+ Microsoft.Azure.Documents.GatewayStoreModel.<InvokeAsync>d__20.M=
+oveNext()=0D=0A--- End of stack trace from previous location wher=
+e exception was thrown ---=0D=0A   at System.Runtime.ExceptionSer=
+vices.ExceptionDispatchInfo.Throw()=0D=0A   at System.Runtime.Com=
+pilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification=
+(Task task)=0D=0A   at System.Runtime.CompilerServices.TaskAwaite=
+r`1.GetResult()=0D=0A   at Microsoft.Azure.Documents.GatewayStore=
+Model.<ProcessMessageAsync>d__12.MoveNext()=0D=0A--- End of stack=
+ trace from previous location where exception was thrown ---=0D=0A=
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Thro=
+w()=0D=0A   at System.Runtime.CompilerServices.TaskAwaiter.Handle=
+NonSuccessAndDebuggerNotification(Task task)=0D=0A   at System.Ru=
+ntime.CompilerServices.TaskAwaiter`1.GetResult()=0D=0A   at Micro=
+soft.Azure.Documents.Client.DocumentClient.<ReadAsync>d__253.Move=
+Next()=0D=0A--- End of stack trace from previous location where e=
+xception was thrown ---=0D=0A   at System.Runtime.ExceptionServic=
+es.ExceptionDispatchInfo.Throw()=0D=0A   at System.Runtime.Compil=
+erServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Ta=
+sk task)=0D=0A   at System.Runtime.CompilerServices.TaskAwaiter`1=
+..GetResult()=0D=0A   at Microsoft.Azure.Documents.Client.Document=
+Client.<ReadDocumentPrivateAsync>d__172`1.MoveNext()=0D=0A--- End=
+ of stack trace from previous location where exception was thrown=
+ ---=0D=0A   at System.Runtime.ExceptionServices.ExceptionDispatc=
+hInfo.Throw()=0D=0A   at System.Runtime.CompilerServices.TaskAwai=
+ter.HandleNonSuccessAndDebuggerNotification(Task task)=0D=0A   at=
+ System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()=0D=0A =
+  at Microsoft.Azure.Documents.BackoffRetryUtility`1.<>c__Display=
+Class1_0.<<ExecuteAsync>b__0>d.MoveNext()=0D=0A--- End of stack t=
+race from previous location where exception was thrown ---=0D=0A =
+  at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw=
+()=0D=0A   at System.Runtime.CompilerServices.TaskAwaiter.HandleN=
+onSuccessAndDebuggerNotification(Task task)=0D=0A   at System.Run=
+time.CompilerServices.TaskAwaiter`1.GetResult()=0D=0A   at Micros=
+oft.Azure.Documents.BackoffRetryUtility`1.<ExecuteRetry>d__3.Move=
+Next()=0D=0A--- End of stack trace from previous location where e=
+xception was thrown ---=0D=0A   at System.Runtime.ExceptionServic=
+es.ExceptionDispatchInfo.Throw()=0D=0A   at Microsoft.Azure.Docum=
+ents.BackoffRetryUtility`1.<ExecuteRetry>d__3.MoveNext()=0D=0A---=
+ End of stack trace from previous location where exception was th=
+rown ---=0D=0A   at System.Runtime.ExceptionServices.ExceptionDis=
+patchInfo.Throw()=0D=0A   at System.Runtime.CompilerServices.Task=
+Awaiter.HandleNonSuccessAndDebuggerNotification(Task task)=0D=0A =
+  at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()=0D=0A=
+   at Microsoft.Azure.Documents.BackoffRetryUtility`1.<ExecuteAsy=
+nc>d__1.MoveNext()=0D=0A--- End of stack trace from previous loca=
+tion where exception was thrown ---=0D=0A   at System.Runtime.Exc=
+eptionServices.ExceptionDispatchInfo.Throw()=0D=0A   at System.Ru=
+ntime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNot=
+ification(Task task)=0D=0A   at System.Runtime.CompilerServices.T=
+askAwaiter`1.GetResult()=0D=0A   at SampleCosmosCore2App.Core.Sam=
+ples.SamplePersistence.<GetSampleAsync>d__6.MoveNext() in Z:\_dev=
+\github\ffreitas0\dotnetcore-studies\cosmosdb\Sample_ASPNetCore2A=
+ndCosmosDB\SampleCosmosCore2App.Core\Samples\SamplePersistence.cs=
+:line 40=0D=0A--- End of stack trace from previous location where=
+ exception was thrown ---=0D=0A   at System.Runtime.ExceptionServ=
+ices.ExceptionDispatchInfo.Throw()=0D=0A   at System.Runtime.Comp=
+ilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(=
+Task task)=0D=0A   at System.Runtime.CompilerServices.TaskAwaiter=
+`1.GetResult()=0D=0A   at SampleCosmosCore2App.Controllers.HomeCo=
+ntroller.<GetAsync>d__4.MoveNext() in Z:\_dev\github\ffreitas0\do=
+tnetcore-studies\cosmosdb\Sample_ASPNetCore2AndCosmosDB\SampleCos=
+mosCore2App\Controllers\HomeController.cs:line 42=0D=0A--- End of=
+ stack trace from previous location where exception was thrown --=
+-=0D=0A   at System.Runtime.ExceptionServices.ExceptionDispatchIn=
+fo.Throw()=0D=0A   at System.Runtime.CompilerServices.TaskAwaiter=
+..HandleNonSuccessAndDebuggerNotification(Task task)=0D=0A   at Sy=
+stem.Runtime.CompilerServices.TaskAwaiter`1.GetResult()=0D=0A   a=
+t Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<Invo=
+keActionMethodAsync>d__12.MoveNext()=0D=0A--- End of stack trace =
+from previous location where exception was thrown ---=0D=0A   at =
+System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()=0D=0A=
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSucces=
+sAndDebuggerNotification(Task task)=0D=0A   at Microsoft.AspNetCo=
+re.Mvc.Internal.ControllerActionInvoker.<InvokeNextActionFilterAs=
+ync>d__10.MoveNext()=0D=0A--- End of stack trace from previous lo=
+cation where exception was thrown ---=0D=0A   at System.Runtime.E=
+xceptionServices.ExceptionDispatchInfo.Throw()=0D=0A   at Microso=
+ft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(Action=
+ExecutedContext context)=0D=0A   at Microsoft.AspNetCore.Mvc.Inte=
+rnal.ControllerActionInvoker.Next(State& next, Scope& scope, Obje=
+ct& state, Boolean& isCompleted)=0D=0A   at Microsoft.AspNetCore.=
+Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__1=
+4.MoveNext()=0D=0A--- End of stack trace from previous location w=
+here exception was thrown ---=0D=0A   at System.Runtime.Exception=
+Services.ExceptionDispatchInfo.Throw()=0D=0A   at System.Runtime.=
+CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotificat=
+ion(Task task)=0D=0A   at Microsoft.AspNetCore.Mvc.Internal.Resou=
+rceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()=0D=0A--- En=
+d of stack trace from previous location where exception was throw=
+n ---=0D=0A   at System.Runtime.ExceptionServices.ExceptionDispat=
+chInfo.Throw()=0D=0A   at Microsoft.AspNetCore.Mvc.Internal.Resou=
+rceInvoker.Rethrow(ResourceExecutedContext context)=0D=0A   at Mi=
+crosoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next,=
+ Scope& scope, Object& state, Boolean& isCompleted)=0D=0A   at Mi=
+crosoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipe=
+lineAsync>d__17.MoveNext()=0D=0A--- End of stack trace from previ=
+ous location where exception was thrown ---=0D=0A   at System.Run=
+time.ExceptionServices.ExceptionDispatchInfo.Throw()=0D=0A   at S=
+ystem.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDeb=
+uggerNotification(Task task)=0D=0A   at Microsoft.AspNetCore.Mvc.=
+Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()=0D=0A--- E=
+nd of stack trace from previous location where exception was thro=
+wn ---=0D=0A   at System.Runtime.ExceptionServices.ExceptionDispa=
+tchInfo.Throw()=0D=0A   at System.Runtime.CompilerServices.TaskAw=
+aiter.HandleNonSuccessAndDebuggerNotification(Task task)=0D=0A   =
+at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.Mov=
+eNext()=0D=0A--- End of stack trace from previous location where =
+exception was thrown ---=0D=0A   at System.Runtime.ExceptionServi=
+ces.ExceptionDispatchInfo.Throw()=0D=0A   at System.Runtime.Compi=
+lerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(T=
+ask task)=0D=0A   at Microsoft.AspNetCore.Authentication.Authenti=
+cationMiddleware.<Invoke>d__6.MoveNext()=0D=0A--- End of stack tr=
+ace from previous location where exception was thrown ---=0D=0A  =
+ at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw(=
+)=0D=0A   at System.Runtime.CompilerServices.TaskAwaiter.HandleNo=
+nSuccessAndDebuggerNotification(Task task)=0D=0A   at Microsoft.A=
+spNetCore.Diagnostics.StatusCodePagesMiddleware.<Invoke>d__3.Move=
+Next()=0D=0A--- End of stack trace from previous location where e=
+xception was thrown ---=0D=0A   at System.Runtime.ExceptionServic=
+es.ExceptionDispatchInfo.Throw()=0D=0A   at System.Runtime.Compil=
+erServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Ta=
+sk task)=0D=0A   at Microsoft.AspNetCore.Diagnostics.ExceptionHan=
+dlerMiddleware.<Invoke>d__6.MoveNext()</pre></td></tr>=0A</table>=
+=0A
